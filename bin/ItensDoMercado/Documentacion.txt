@@ -1,0 +1,9 @@
+Produtos
+atributos
+- nome
+- codigo
+- valor
+
+metodos
+CadastrarProduto
+RemoverProduto

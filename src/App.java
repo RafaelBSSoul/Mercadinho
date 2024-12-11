@@ -8,13 +8,14 @@ public class App {
         System.out.println("Mercado");
         List<Produtos> itens = new ArrayList<>();
         Produtos novoItem = new Produtos();
+        Produtos novoItem2 = new Produtos();
+        novoItem2.setNome("Caixas");
         novoItem.setNome("Ovos");
 
         itens.add(novoItem);
+        itens.add(novoItem2);
 
 
-
-System.out.println(itens);
-
+itens.stream().forEach(e->System.out.println(itens));
     }
 }

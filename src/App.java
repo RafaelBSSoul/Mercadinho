@@ -20,13 +20,14 @@ itens.stream().findFirst();
 
 itens.stream().forEach(e->System.out.println(itens));
 //Adicionar
+
 iniciar = entrada.nextLine();
 switch (iniciar) {
-    case value:
+    case "cadastrar":
         
         break;
 
-          case value:
+          case "remover":
         
              break;
 

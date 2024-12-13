@@ -1,6 +1,10 @@
 package ItensDoMercado;
 
+import java.util.Scanner;
+
 public class Produtos {
+
+    Scanner entradaDeProdutos = new Scanner(System.in);
    private String nome;
    private int codigo;
    private double valor;
@@ -26,5 +30,11 @@ public double getValor() {
 public void setValor(double valor) {
     this.valor = valor;
 }
-    
+    public void cadastrar(){
+        int cod = 1;
+nome = entradaDeProdutos.nextLine();
+codigo = cod++;
+valor = entradaDeProdutos.nextDouble();
+
+    }
 }

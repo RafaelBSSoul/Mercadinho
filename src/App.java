@@ -8,26 +8,35 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner entrada = new Scanner(System.in);
         System.out.println("Mercado");
-        String iniciar;
+        int iniciar;
         List<Produtos> itens = new ArrayList<>();
         Produtos novoItem = new Produtos();
-        Produtos novoItem2 = new Produtos();
-        novoItem2.setNome("Caixas");
+            
+
+
+
+
+
+
+
+
         novoItem.setNome("Ovos");
         itens.add(novoItem);
-        itens.add(novoItem2);
 itens.stream().findFirst();
 
 itens.stream().forEach(e->System.out.println(itens));
 //Adicionar
 
-iniciar = entrada.nextLine();
+iniciar = entrada.nextInt();
 switch (iniciar) {
-    case "cadastrar":
+    case 1://cadastrar
+    novoItem.cadastrar();
         
+System.out.println(itens);
+
         break;
 
-          case "remover":
+          case 2://remover
         
              break;
 
